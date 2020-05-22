@@ -1,0 +1,54 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #ffffff;
+}
+.wrap {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #58b4ae;
+    box-sizing: border-box;
+    position: relative;
+}
+.layout {
+    margin: auto;
+    min-height: 100%;
+    max-width: 100%;
+    max-width: 1240px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.layout header,
+.layout section,
+.layout footer {
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1 auto;
+}
+.layout header {
+    background-color: #ffe277;
+}
+.layout section {
+    flex-grow: 3;
+    background-color: #ffb367;
+}
+.layout footer {
+    background-color: #ffe2bc;
+}
+
+/* ! demo */
+.abs {
+    position: absolute;
+    right: -100px;
+    top: 40px;
+}
+.layout section > div {
+    /* display: none; */
+}
+p {
+    margin-bottom: 1rem;
+}
